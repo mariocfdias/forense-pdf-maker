@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Relatório</title>
+
+    <style>
+        @page 
+    { 
+        size: A4 portrait;
+        margin: 0;
+
+    }
+    </style>
+    
+ 
+</head>
+<body class="bg-white m-y-4">
+    
+    <div class="m-8">           
+        <div id="'capa" class="h-[64rem] overflow-hidden break-after-page flex flex-col justify-between items-center p-10 ">
+           <div id="foto" class="">
+
+            <div>
+                <img src='public/cover.jpg' class="p-2" width="400" height="400"/>
+                <h1 class="text-4xl	text-center font-bold">LAUDO PERICIAL</h1>
+                    <h2 class="text-xl	text-center font-bold">PARECER TÉCNICO DA DEFESA</h2>
+            </div>
+           </div>
+           <div id="nome-peritos" class="">
+
+           <h2 id='peritos' class="text-lg">
+            PERITOS: MARCOS JOSÉ ALVES DE BARROS MONTEIRO<br/>
+            EDSON CAVALCANTI NETO
+           </h2>
+           <h2 id='acusados' class="text-lg p-y-4">
+           
+            ACUSADO: ANTONIO CLAUDIO BARBOSA DE CASTRO
+        </h2>   
+        </div>
+           <div id="data" class="">
+
+            <%- date %>
+           </div>
+           
+                                                                                                 
+        </div>
+        
+        <div class="border-1 break-after-page p-10">
+            <h1 class="text-3xl mb-8 color">Introdução</h1>
+            
+            <%- introduction %>
+                
+
+            </div>
+
+            
+            <div class="border-1 break-after-page p-10">
+                <h1 class="text-3xl mb-8 color">Objetivo</h1>
+
+                <%- objective %>
+                
+
+            </div>
+
+
+            
+            <div class="border-1 break-after-page p-10">
+                <h1 class="text-3xl mb-8 color">Metodologia</h1>
+
+                <%- metodology %>
+                
+
+            </div>
+
+            
+            
+            
+            
+            <h1 class="text-3xl mb-8 color 	p-10">Processamentos</h1>
+            <div class="border-1 bg-#F5F8FF p-10 my-6 flex flex-col	 gap-x-4 break-inside-avoid justify-start ">
+
+                <img class="rounded-xl block  break-inside-avoid object-none my-4" src='https://picsum.photos/300'/>
+
+                <div class="border-2 rounded-xl">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod magna tellus, vitae dapibus felis mollis eget. Vestibulum venenatis ante urna, vitae sollicitudin nisl aliquam eget. Duis mollis elit enim, et sodales massa ornare eget. Nullam egestas metus sit amet lorem semper, at imperdiet ex hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempor ipsum ut dictum varius. Vestibulum gravida quam eget nisl maximus, a varius leo rhoncus. Ut porta ligula dui, ut faucibus nulla suscipit eget.
+
+                    Donec leo dolor, pharetra et bibendum id, aliquam in eros. Proin sit amet augue non risus ornare pretium. Nulla eget tristique urna. Quisque porta volutpat lacus. Aliquam euismod quam non erat porta dictum. Donec sed sollicitudin mi. Aliquam et pellentesque tellus. Vestibulum imperdiet ipsum sollicitudin erat auctor, id interdum metus pharetra.
+                    </div>
+
+            </div>
+           
+
+
+
+            
+            
+            <div class="border-1 break-after-page p-10">
+                <h1 class="text-3xl mb-8 color">Conclusão</h1>
+                
+                <%- conclusion %>
+
+                
+                
+            </div>
+            
+        </div>
+</body>
+</html>
